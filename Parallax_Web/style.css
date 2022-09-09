@@ -1,0 +1,223 @@
+ :root{
+    --main-color:#FF0000
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url("https://fonts.googleapis.com");
+}
+
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 40px 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 9999;
+}
+
+header .logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--main-color);
+    margin-left: 20px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 15px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+header nav ul li a.login{
+    background-color: var(--main-color);
+}
+header nav ul li a.login:hover{
+    background-color: #FFAFB0;
+}
+header nav ul li a:hover:not(.login) {
+    color: var(--main-color);
+}
+
+/* start section1 styling*/
+.section1 {
+    background: linear-gradient(#289eff,#41bdff,#4eccff,#64e1ff,#bfdefe);
+    max-height:100vh;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.section1 .pytext {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: var(--main-color);
+    z-index:2;
+
+}
+.section1 .pytext span{
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: white;
+}
+.section1 .pytext p{
+    background-image: url(images/bayrak.png);
+    
+    background-size: 945px;
+    background-position-x: -10px;
+    background-position-y: -523px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 140px;
+    font-family: Playfair Display;
+    color: transparent;
+}
+
+.section1 img{
+    position: absolute;
+    object-fit: cover;
+    
+}
+
+.section1 img.anitkabir{
+    width: 87%;
+    position: absolute;
+  top: 70.5%; right: 50%;
+  transform: translate(50%,-50%);
+    
+    z-index: 1;
+}
+.section1 img.sun{
+    left:130px;
+    top:104px;
+    width: 143px;
+    z-index: 5;
+}
+
+.section1 img.sunref1{
+    left: 31px;
+    top:20px;
+    width:143px;
+    z-index: 1;
+}
+
+.section1 img.sunref2{
+    left: 210px;
+    top: 200px;
+    width: 105px;
+   z-index: 1;
+}
+
+.section1 img.cloud1{
+    right: 53px;
+    top: 142px;
+    width: 340px;
+    mix-blend-mode: lighten;
+}
+.section1 img.cloud2{
+  
+    left: 120px;
+    top: 292px;
+    width: 316px;
+    mix-blend-mode: lighten;
+}
+
+/* start section2 css*/
+
+.section2{
+    background: linear-gradient(#bfdefe,#50677E,#1E2A36);
+    position: relative;
+    max-height:100vh;
+    min-height: 100vh;
+   
+}
+
+.section2 .meydan{
+    position: absolute;
+    height: 753px;
+    width: 100%;
+    bottom:-1px;
+    left:0px;
+    mix-blend-mode: screen;
+}
+
+.section2 .at{
+    position: absolute;
+    height: 490px;
+    bottom: 42px;
+    right:33px;
+}
+
+.section2 .ata{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    color:var(--main-color);
+    z-index: 10000;
+    color: white;
+    font-size: 30px;
+}
+.section2 .ata p{
+    height: 10px;
+}
+.section2 .ata .ataturk {
+    background-image: url(images/bayrak.png);
+    
+    background-size: 945px;
+    background-position-x: -10px;
+    background-position-y: -523px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 140px;
+    font-family: Playfair Display;
+    color: transparent;
+}
+.ml12 {
+    font-weight: 200;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    position: absolute;
+    bottom: -264px;
+    padding: 98px;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 0.5em;
+  }
+
